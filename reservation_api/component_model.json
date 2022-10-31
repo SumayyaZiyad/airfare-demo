@@ -1,0 +1,50 @@
+{
+    "packageId":{
+       "name":"reservation_api",
+       "org":"aneesha",
+       "version":"0.1.0"
+    },
+    "services":[
+       {
+          "path":"sample",
+          "serviceId":"101",
+          "resources":[
+             {
+                "resourceId":{
+                   "serviceId":"101",
+                   "path":"weather",
+                   "method":"get"
+                },
+                "parameters":[],
+                "returns":[
+                   "error",
+                   "null"
+                ],
+                "interactions":[
+                    {
+                        "serviceId":"002",
+                        "path":"names",
+                        "method":"get"
+                     },
+                     {
+                        "serviceId":"003",
+                        "path":"", //need to somehome resolve the base URL
+                        "method":"get"
+                     },
+                     {
+                        "serviceId":"004",
+                        "path":"", //???
+                        "method":"" //???
+                     }
+                ],
+                "external-clients": [
+                    {
+                        "connector": "ballerinax/openweathermap",
+                        "method": "getCurretWeatherData"
+                    }
+                ]
+             }
+          ]
+       }
+    ]
+}

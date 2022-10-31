@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "booking_api"
+		},
+		{
+			"path": "fares_api"
+		},
+		{
+			"path": "inventory_api"
+		},
+		{
+			"path": "reservation_api"
+		}
+	]
+}

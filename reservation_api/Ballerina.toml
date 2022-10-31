@@ -1,0 +1,26 @@
+[package]
+org = "aneesha"
+name = "reservation_api"
+version = "0.1.0"
+distribution = "2201.1.0"
+
+[build-options]
+observabilityIncluded = true
+
+[[dependency]]
+org = "aneesha"
+name = "booking_api"
+version = "0.1.0"
+repository = "local"
+
+[[dependency]]
+org = "aneesha"
+name = "fares_api"
+version = "0.1.0"
+repository = "local"
+
+[[dependency]]
+org = "aneesha"
+name = "inventory_api"
+version = "0.1.0"
+repository = "local"
